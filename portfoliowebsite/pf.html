@@ -1,0 +1,229 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../pf.css">
+    <script src="https://kit.fontawesome.com/8c2f861511.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="mine"><span class="mine1">V</span>eeramma</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, I'm <span>Veeramma Sandimani</span><br>from bengaluru</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/stand.jpeg" height="400px">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1> 
+                        <p><p>
+                            I'm a dedicated Web Developer based in Bengaluru, India, with a strong passion for building fast, responsive, and user-friendly websites and web applications. 
+                            I specialize in front-end development using HTML, CSS, JavaScript, React JS and modern frameworks. 
+                            With a deep interest in solving real-world problems through code, I strive to build digital experiences that are both functional and visually engaging.
+                          </p>
+                          </p>
+                             <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                                <p class="tab-links"  onclick="opentab('Experience', event)">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End Development</span><br>HTML5, CSS3, JavaScript, Bootstrap</li>
+                                    <li><span>Frameworks</span><br>React.js, jQuery</li>
+                                    <li><span>Back-End Basics</span><br>Node.js, Express.js</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>2025</span><br>Portfolio Website Project<br>
+                                        Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.
+                                        Integrated a contact form using Google Apps Script.</li>
+                                    <li><span>web development workshop from Prinston</span><br> Gained hands-on experience building static websites and using GitHub for version control.
+                                         Worked on responsive layouts and basic form handling.</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>2025 -present</span><br>Computer Science and Engineering <br>Vemana Institute of Technology</li>
+                                    <li><span>2023-2024</span><br>web app development workshop <br> coursera - HTML, CSS, JavaScript, React JS</li>
+                                </ul>
+                             </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I’m Learning & Offering</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Custom Web Development</h2>
+                    <p>Design and develop responsive, user-friendly websites using HTML, CSS, JavaScript, and frameworks like React.js and Bootstrap.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Competitive Programming</h2>
+                    <p>Solving coding challenges and algorithmic problems to improve problem-solving skills and prepare for coding interviews.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Website Redesign & Optimization</h2>
+                    <p>I help refresh outdated websites, optimizing them for better speed, performance, and user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/w2" height="255px">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p> Designed and developed a personal portfolio website to
+                             showcase my skills as a web developer. </p>
+                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecommer.jpeg" height="255px">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>Created a fully functional e-commerce website 
+                            for a small business using Shopify </p>
+                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/w2" height="255px">
+                    <div class="layer">
+                        <h3>Weather Forecast Web App</h3>
+                        <p>Developed a web application that allows users to check the 
+                            weather for any city worldwide.</p>
+                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>sandimani060@gmail.com</p>
+                <p>8867469548</p>
+                <div class="social-icons">
+                    <a href=""></a>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sandimani060@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8867469548</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="../portfoliowebsite/resume/VEERAMMA-2025.docx" download class="btn btn2">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Veeramma Sandimani. All rights reserved. <i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname, event){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+                for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiB_XRjRaQKtUsrM8x1KGuK5sWZk-oiQkFAp8qLHEmARmI-n0sVLs2-U43hmCNCg5tVg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method:'POST', body:new FormData(form)})
+            .then(response => console.log('Success!',response))
+            .catch(error => console.error('Error!', error.message))
+        })
+
+
+    </script>
+</body>
+</html>
